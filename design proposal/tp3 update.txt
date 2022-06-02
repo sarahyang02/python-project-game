@@ -1,0 +1,2 @@
+- villain no longer eats food as well, only chases player
+- power up to avoid collisions no longer exists

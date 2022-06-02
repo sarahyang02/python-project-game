@@ -1,0 +1,82 @@
+# project proposal
+#----------------------------------------
+
+project description : 
+
+"Hungry Pika"
+
+A remake of hungry shark but with a pikachu, the goal is to continue eating 
+food while your health continuously decreases. Each time you eat food, your 
+score and health increases. Avoid obstacles and villains that want to eat you.
+Villains will also be eating food but will change direction and chase you 
+if you enter their vicinity. Powerups will allow you to cross the river and 
+have easier movement. 
+
+Competitive analysis : 
+
+Hungry shark demos and remixes can be found on google and the official MIT 
+website. They are made with scratch but the movements and obstacles can be 
+replicated in structure. 
+
+In addition, several pacman algorithms can be found online. A few aspects and
+algorithm pieces in my game are similar to pacman so I can modify the code
+found there. 
+
+
+Structural Plan : 
+
+- Villains stored in object 
+  - functions to : 
+	- eat food 
+	- collisions
+	- move around and chase pikachu
+
+- Food stored in object  
+  - functions to : 
+	- spawn food 
+	- move food 
+	- collisions 
+
+- Nodes for a* stored in class 
+
+
+Algorithmic Plan : 
+
+- use grid to do collision algorithms 
+  - use collision function to determine which rows and cols should not be traversed (obstacles)
+
+- villain chase food/eat if they catch it (complex)
+  - if pikachu comes into view, enemy abandons food and chases pikachu
+  - Use shortest distance a* algorithm
+	- separate class for nodes 
+	- recursion in order to find shortest path to end node 
+	- backtrack to determine exact path taken and return path
+
+- Power up that allows pikachu to eat predators (similar to pacman algorithm)
+- Power up that allows pikachu to cross water
+- Amount of food spawned around map decreases as time goes on (increase in difficulty)
+
+Timeline Plan : 
+
+TP0 : background set, pikachu sprite set, food items set
+
+TP1 : obstacles on map set, collisions, health bar, food spawning, predators set
+
+TP2 : predators algorithm set, powerup algorithm set, scoring system 
+
+
+Version Control Plan : 
+
+- Google Docs
+
+Module List : 
+
+- PIL
+
+
+
+
+
+
+
+

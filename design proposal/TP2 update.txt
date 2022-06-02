@@ -1,0 +1,8 @@
+TP2 update :
+
+- new power ups :
+    - 2x speed on player 
+    - slower speed on villain 
+    - freeze health bar 
+
+- have a dumb algorithm for 1 villain, smart a* for other villain 
